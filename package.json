@@ -1,0 +1,84 @@
+{
+  "name": "package-boilerplate",
+  "version": "1.0.0",
+  "homepage": "https://github.com/arjunghimire/package-boilerplate",
+  "description": "React component for advanced search",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Arjun Ghimire",
+    "email": "arjunghimire0714@gmail.com",
+    "url": "https://code4ever.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arjunghimire/package-boilerplate"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "rollup-plugin-dts": "^5.3.0"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@storybook/addon-essentials": "^7.0.7",
+    "@storybook/addon-interactions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/blocks": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/react-webpack5": "^7.0.7",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.0.38",
+    "@types/react-is": "^18.2.0",
+    "@types/testing-library__react": "^10.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "babel-loader": "^9.1.2",
+    "bootstrap": "^5.2.3",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "formik": "^2.2.9",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "rollup": "^3.21.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "storybook": "^7.0.7",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "yup": "^1.1.1"
+  },
+  "scripts": {
+    "build": "rollup -c --watch",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}
