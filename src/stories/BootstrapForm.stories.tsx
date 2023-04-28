@@ -1,25 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import BootstrapForm from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import BForm from "react-bootstrap/Form";
 import FormikForm from "../FormikForm";
-import { userSchema } from "../validations/form";
-
-const FormField = (props: any) => {
-  return (
-    <BootstrapForm.Control
-      type="text"
-      placeholder="Enter fullname"
-      {...props}
-    />
-  );
-};
+import { bootstrapformSchema } from "../validations/form";
 
 const meta = {
-  title: "Example/FormikForm",
+  title: "Example/Formik Form",
   component: FormikForm,
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "fullscreen",
   },
 } satisfies Meta<typeof FormikForm>;
@@ -27,23 +17,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Form: Story = {
+export const BootstrapForm: Story = {
   args: {
-    validationSchema: userSchema,
+    validationSchema: bootstrapformSchema,
     data: [
       {
         labelProps: {
           title: "Fullname",
-          className: "",
         },
         formProps: {
           name: "fullname",
-          className: "form-control",
           value: "",
-          component: FormField,
-        },
-        errorProps: {
-          className: "",
+          placeholder: "Enter fullname",
+          component: <BForm.Control />,
         },
       },
       {
@@ -53,16 +39,27 @@ export const Form: Story = {
         },
         formProps: {
           name: "email",
-          className: "form-control",
           value: "",
+          placeholder: "Enter email",
+          component: <BForm.Control />,
         },
-        errorProps: {
+      },
+      {
+        labelProps: {
+          title: "Password",
           className: "",
+        },
+        formProps: {
+          name: "password",
+          value: "",
+          placeholder: "Enter password",
+          component: <BForm.Control />,
         },
       },
     ],
-    submitBtnTitle: "Login",
-    submitBtnClassName: "btn btn-danger mt-2",
+    buttonProps: {
+      component: <Button variant="primary">Submit</Button>,
+    },
     onSubmit: (values) => {
       alert(JSON.stringify(values));
     },

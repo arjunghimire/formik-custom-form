@@ -1,9 +1,14 @@
 import { object, string } from "yup";
 
-const userSchema = object({
+const bootstrapformSchema = object({
   fullname: string().required(),
-  // email: string().email().required(),
-  // password: string().required(),
+  email: string().email().required(),
+  password: string().required(),
 });
 
-export { userSchema };
+const userSchema = object({
+  email: string().email().required(),
+  password: string().required(),
+});
+
+export { userSchema, bootstrapformSchema };

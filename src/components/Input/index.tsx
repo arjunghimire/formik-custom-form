@@ -1,14 +1,13 @@
-import React, { FC } from "react";
+import React, { FC, isValidElement } from "react";
 import { FormProps } from "../../types";
-import { isValidElementType } from "react-is";
 
-const InputField: FC<FormProps> = ({ component: Component, ...restProps }) => {
+const InputField: FC<FormProps> = ({ component, className, ...restProps }) => {
   return (
     <>
-      {isValidElementType(Component) ? (
-        <Component {...restProps} />
+      {isValidElement(component) ? (
+        React.cloneElement(component, { ...restProps })
       ) : (
-        <input {...restProps} />
+        <input className={className || "form-input"} {...restProps} />
       )}
     </>
   );
