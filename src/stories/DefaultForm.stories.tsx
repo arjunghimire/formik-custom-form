@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FormikForm from "../FormikForm";
+import FormikForm from "..";
 import { userSchema } from "../validations/form";
 
 const meta = {

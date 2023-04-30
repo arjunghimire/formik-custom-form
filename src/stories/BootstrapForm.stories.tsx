@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import BForm from "react-bootstrap/Form";
-import FormikForm from "../FormikForm";
+import FormikForm from "..";
 import { bootstrapformSchema } from "../validations/form";
 
 const meta = {

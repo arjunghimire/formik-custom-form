@@ -1,1 +1,3 @@
-export * as FormikForm from "./FormikForm";
+import FormikForm from "./FormikForm";
+
+export default FormikForm;

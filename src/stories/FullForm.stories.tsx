@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FormikForm from "../FormikForm";
+import FormikForm from "..";
 import React, { useState } from "react";
 
 const meta = {
@@ -63,7 +63,7 @@ FullForm.args = {
         title: "Select",
       },
       formProps: {
-        name: "vehicle",
+        name: "veh",
         value: "car",
         options: [
           {
