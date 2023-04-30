@@ -1,6 +1,6 @@
 {
   "name": "formik-custom-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/arjunghimire/formik-custom-form",
   "description": "Build formik form with fastest way",
   "main": "dist/cjs/index.js",
