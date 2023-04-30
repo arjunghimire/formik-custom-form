@@ -24,12 +24,7 @@ module.exports = [
       }),
       peerDepsExternal(),
       resolve(),
-      commonjs({
-        include: "node_modules/**",
-        namedExports: {
-          "node_modules/react-is/index.js": ["isValidElementType"],
-        },
-      }),
+      commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
     ],

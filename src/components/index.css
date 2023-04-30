@@ -1,0 +1,49 @@
+.custom-form__input {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #dadada;
+}
+.custom-form__checkbox {
+ 
+}
+
+.custom-form__radio {
+}
+
+.custom-form__wrapper{
+  display: block;
+  margin: 10px 0;
+}
+.custom-form__select {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #dadada;
+}
+.custom-form__button {
+  border-radius: 6px;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid #dadada;
+  background-color: #0a66c2;
+  color: #fff;
+  display: block;
+}
+.custom-form__textarea {
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 6px;
+}
+
+
+.custom-form__label {
+ font-size: 1rem;
+}
+.custom-form__error {
+  color: #ff3333;
+  font-size: 0.875rem;
+  display: block;
+}

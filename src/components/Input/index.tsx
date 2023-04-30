@@ -7,10 +7,14 @@ const InputField: FC<FormProps> = ({ component, className, ...restProps }) => {
       {isValidElement(component) ? (
         React.cloneElement(component, { ...restProps })
       ) : (
-        <input className={className || "form-input"} {...restProps} />
+        <input className={className} {...restProps} />
       )}
     </>
   );
+};
+
+InputField.defaultProps = {
+  className: "custom-form__input",
 };
 
 export default InputField;

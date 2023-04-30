@@ -4,10 +4,9 @@ import FormikForm from "../FormikForm";
 import { userSchema } from "../validations/form";
 
 const meta = {
-  title: "Example/Formik Form",
+  title: "Example/Formik Custom Form",
   component: FormikForm,
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "fullscreen",
   },
 } satisfies Meta<typeof FormikForm>;

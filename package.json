@@ -1,8 +1,8 @@
 {
-  "name": "package-boilerplate",
-  "version": "1.0.0",
-  "homepage": "https://github.com/arjunghimire/package-boilerplate",
-  "description": "React component for advanced search",
+  "name": "formik-custom-form",
+  "version": "1.0.1",
+  "homepage": "https://github.com/arjunghimire/formik-custom-form",
+  "description": "Build formik form with fastest way",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arjunghimire/package-boilerplate"
+    "url": "https://github.com/arjunghimire/formik-custom-form"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
@@ -47,7 +47,6 @@
     "@testing-library/react": "^14.0.0",
     "@types/node": "^18.16.0",
     "@types/react": "^18.0.38",
-    "@types/react-is": "^18.2.0",
     "@types/testing-library__react": "^10.2.0",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
@@ -64,7 +63,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
     "rollup": "^3.21.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

@@ -6,7 +6,7 @@ const Label: FC<LabelProps> = ({ title, className }) => {
 };
 
 Label.defaultProps = {
-  className: "",
+  className: "custom-form__label",
   title: "Label",
 };
 

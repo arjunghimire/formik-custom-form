@@ -4,7 +4,7 @@ import FormikForm from "../FormikForm";
 import { userSchema } from "../validations/form";
 
 const meta = {
-  title: "Example/Formik Form",
+  title: "Example/Formik Custom Form",
   component: FormikForm,
   parameters: {
     layout: "fullscreen",

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FormikForm from "../FormikForm";
 
 const meta = {
-  title: "Example/Formik Form",
+  title: "Example/Formik Custom Form",
   component: FormikForm,
   parameters: {
     layout: "fullscreen",

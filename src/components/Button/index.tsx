@@ -17,6 +17,7 @@ const Button: FC<SubmitButtonProps> = ({ component, className, title }) => {
 
 Button.defaultProps = {
   title: "Submit",
+  className: "custom-form__button",
 };
 
 export default Button;

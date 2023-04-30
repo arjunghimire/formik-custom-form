@@ -1,6 +1,5 @@
 import React, { FC, isValidElement } from "react";
 import { ErrorsProps } from "../../types";
-import "./style.css";
 
 const Error: FC<ErrorsProps> = ({ component, message, className }) => {
   return (
@@ -8,10 +7,14 @@ const Error: FC<ErrorsProps> = ({ component, message, className }) => {
       {isValidElement(component) ? (
         React.cloneElement(component)
       ) : (
-        <span className={className || "error"}>{message}</span>
+        <span className={className}>{message}</span>
       )}
     </>
   );
+};
+
+Error.defaultProps = {
+  className: "custom-form__error",
 };
 
 export default Error;

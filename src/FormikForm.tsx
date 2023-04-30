@@ -1,6 +1,16 @@
 import { useFormik } from "formik";
 import React, { FC, Fragment } from "react";
-import { Button, Error, InputField, Label, Textarea } from "./components";
+import {
+  Button,
+  Checkbox,
+  Error,
+  Input,
+  Label,
+  Radio,
+  Select,
+  Textarea,
+} from "./components";
+import "./components/index.css";
 import FormikFormProps from "./types";
 import { getInitialValues } from "./utils";
 
@@ -27,16 +37,47 @@ const FormikForm: FC<FormikFormProps> = ({
         return (
           <Fragment key={i}>
             {labelProps?.title && <Label {...labelProps} />}
+
             {formType === "input" && (
-              <InputField
+              <Input
                 name={name}
                 onChange={handleChange}
                 value={values?.[name]}
                 {...restFormProps}
               />
             )}
+
+            {formType === "radio" && (
+              <Radio
+                labelPosition={formProps?.labelPosition}
+                name={name}
+                value={formProps?.value}
+                onChange={handleChange}
+                {...restFormProps}
+              />
+            )}
+
+            {formType === "checkbox" && (
+              <Checkbox
+                labelPosition={formProps?.labelPosition}
+                name={name}
+                value={formProps?.value}
+                onChange={handleChange}
+                {...restFormProps}
+              />
+            )}
+
             {formType === "textarea" && (
               <Textarea
+                name={name}
+                onChange={handleChange}
+                value={values?.[name]}
+                {...restFormProps}
+              />
+            )}
+
+            {formType === "select" && (
+              <Select
                 name={name}
                 onChange={handleChange}
                 value={values?.[name]}
@@ -53,6 +94,7 @@ const FormikForm: FC<FormikFormProps> = ({
           </Fragment>
         );
       })}
+
       <Button {...buttonProps} />
     </form>
   );
