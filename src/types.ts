@@ -50,7 +50,6 @@ interface FormikFormProps {
   validationSchema?: any;
   buttonProps?: SubmitButtonProps;
   errorProps?: ErrorProps;
-  display?: "horizontal" | "vertical";
   onSubmit: (e: any) => void;
   onReset?: () => void;
 }
