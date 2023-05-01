@@ -1,6 +1,6 @@
 {
   "name": "formik-custom-form",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/arjunghimire/formik-custom-form",
   "description": "Formik Custom Form is a library that provides a set of components for building forms in React using the Formik library.",
   "main": "dist/cjs/index.js",
