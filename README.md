@@ -22,7 +22,7 @@ The `data` array contains objects with the following properties:
   * `title`: a required string property that specifies the text to be displayed on the label.
   * `className`: an optional string property that specifies the CSS class(es) to be applied to the label element.
 
-* `formType`: an optional property used to specify the type of the input field. The supported types are `text`, `select`, `select`, `radio`, `textarea`, and `checkbox`.
+* `formType`: an optional property used to specify the type of the input field. The supported types are `text`, `select`, `radio`, `textarea`, and `checkbox`.
 
 * `formProps`: an object containing properties to be passed to the corresponding form input component.
   * `id`: an optional string property that specifies the ID of the input element.
